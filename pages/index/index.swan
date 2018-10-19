@@ -1,0 +1,31 @@
+<view class='userinfo'>
+    <image src='{{userInfo.avatarUrl}}' class='user_img' />
+    <view>{{userInfo.nickName}}</view>
+    <block s-if="{{userInfo.gender==0}}">
+        <view>女</view>
+    </block>
+    <block s-else>
+        <view>男</view>
+    </block>
+</view>
+<view class="grild">
+    <navigator url="../Icds/icds" class="grild_item">
+        <image src="../../images/icd.png" />
+        <text>证件识别</text>
+    </navigator>
+    <navigator url="../car/car" class="grild_item">
+        <image src="../../images/car.png" />
+        <text>车辆识别</text>
+    </navigator>
+    <navigator url="../bank/bank" class="grild_item">
+        <image src="../../images/bank_car.png" />
+        <text>银行卡识别</text>
+    </navigator>
+    <navigator url="../animal/animal" class="grild_item">
+        <image src="../../images/animal.png" />
+        <text>小动物识别</text>
+    </navigator>
+    <!-- <navigator url="pages/navigate/navigate" class="grild_item">动物识别</navigator>
+    <navigator url="pages/navigate/navigate" class="grild_item">菜品识别</navigator> -->
+</view>
+

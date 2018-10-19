@@ -1,0 +1,11 @@
+<view class="btn">
+    <button type="primary" size="max" hover-class="other-button-hover" bind:tap="getCard">点击扫描</button>
+</view>
+<view class="warn">警告：此程序只允许扫描证件含照片的一面</view>
+<view class="icd_info">
+    <view>姓名：{{info.icdName}}</view>
+    <view>性别：{{info.icdSex}}</view>
+    <view>民族：{{info.icdMz}}</view>
+    <view>ICD：{{info.icdNum}}</view>
+    <view>住址：{{info.icdAddr}}</view>
+</view>

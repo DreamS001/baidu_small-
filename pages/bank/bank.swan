@@ -1,0 +1,17 @@
+<view class="btn">
+    <button type="primary" size="max" hover-class="other-button-hover" bind:tap="getocrBankCard">点击扫描</button>
+</view>
+<!-- <view class="warn">警告：此程序只允许扫描证件含照片的一面</view> -->
+<view class="icd_info">
+    <view>银行名称：{{info.bank_name}}</view>
+    <view>银行卡卡号：{{info.bank_card_number}}</view>
+    <block s-if="!info.bank_card_type">
+        <view>银行卡类型：</view>
+    </block>
+    <block s-elif="info.bank_card_type==1">
+        <view>银行卡类型：借记卡</view>
+    </block>
+    <block s-else="info.bank_card_type==2">
+        <view>银行卡类型：信用卡</view>
+    </block>
+</view>

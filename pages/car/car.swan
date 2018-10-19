@@ -1,0 +1,10 @@
+<view class="btn">
+    <button type="primary" size="max" hover-class="other-button-hover" bind:tap="getcarClassify">点击扫描</button>
+</view>
+<!-- <view class="warn">警告：此程序只允许扫描证件含照片的一面</view> -->
+<view class="icd_info">
+    <view>车型名称：{{info.carName}}</view>
+    <view>车辆颜色：{{info.carColor}}</view>
+    <view>生产年份：{{info.carYear}}</view>
+    <view>置信度：{{info.carScore}}</view>
+</view>
